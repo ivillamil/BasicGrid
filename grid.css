@@ -17,16 +17,13 @@
 
 .row {
 	max-width: 100%;
-	min-width: 768px;
-	width: 1000px;
+	min-width: 0;
+	width: auto;
 
 	margin: 0 auto;
 }
 
-.row .row {
-	width: auto;
-	max-width: none;
-	min-width: 0;
+[class*="column"] .row {	
 	margin: 0 -15px; /* -15px to remove the gutt(padding) */
 }
 
@@ -47,6 +44,15 @@
 .row:before, .row:after, .clearfix:before, .clearfix:after { content: ""; display: table; }
 .row:after, .clearfix:after { clear: both; }
 .row, .clearfix { zoom: 1; }
+
+/* Helpers */
+.snap-left { margin-left: -15px; } 		/* Change this value according  */
+.snap-right { margin-right: -15px; }    /* to the Gutt 					*/
+
+.wrapper { 
+	width: 1000px; /* you can change this value according to your needs */
+	margin: 0 auto; 
+}
 
 
 /* ajust for mobile devices */
