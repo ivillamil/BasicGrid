@@ -50,6 +50,7 @@
 .snap-right { margin-right: -15px; }    /* to the Gutt 					*/
 
 .wrapper { 
+	max-width: 100%;
 	width: 1000px; /* you can change this value according to your needs */
 	margin: 0 auto; 
 }
