@@ -12,6 +12,10 @@
 	position: relative;
 }
 
+.collapse .column, .collapse .columns {
+	padding: 0;
+}
+
 [class*="column"] + [class*="column"]:last-child { float: right; }
 [class*="column"] + [class*="column"].end { float: left; }
 
@@ -25,6 +29,9 @@
 
 [class*="column"] .row {	
 	margin: 0 -15px; /* -15px to remove the gutt(padding) */
+}
+.collapse [class*="columns"] .row {
+	margin: 0;
 }
 
 .row .one 		{ width: 8.33%; }
